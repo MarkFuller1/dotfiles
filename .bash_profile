@@ -5,4 +5,6 @@
 
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:/home/mark/.dotnet/tools"
+export ASPNETCORE_JWT_SECRET_KEY='Thisisasecretkey123'
+export PATH="$PATH:/home/mark/.dotnet/tools"
 export BROWSER="firefox"
