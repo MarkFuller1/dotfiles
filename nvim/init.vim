@@ -1,3 +1,5 @@
+let g:python_host_prog='/usr/bin/python2'
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'SirVer/ultisnips'
