@@ -73,10 +73,10 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 # focus_follows_mouse no
 # 
 # change focus
-# bindsym $mod+j focus left
-# bindsym $mod+k focus down
-# bindsym $mod+l focus up
-# bindsym $mod+semicolon focus right
+ bindsym $mod+j focus left
+ bindsym $mod+k focus down
+ bindsym $mod+l focus up
+ bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -162,7 +162,7 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
+#bindsym $mod+0 workspace $ws10
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
@@ -174,7 +174,7 @@ bindsym $mod+Ctrl+6 move container to workspace $ws6
 bindsym $mod+Ctrl+7 move container to workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8
 bindsym $mod+Ctrl+9 move container to workspace $ws9
-bindsym $mod+Ctrl+0 move container to workspace $ws10
+#bindsym $mod+Ctrl+0 move container to workspace $ws10
 
 # Move to workspace with focused container
 bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
@@ -186,7 +186,7 @@ bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
+#bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
@@ -278,7 +278,7 @@ mode "resize" {
 
 
 # Lock screen
-bindsym $mod+l exec --no-startup-id blurlock
+bindsym $mod+0 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -299,7 +299,7 @@ exec_always --no-startup-id fix_xcursor
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
-# Change the variable name at the place you want to match the color
+# Change the variable name at the place yu want too match the color
 # of your terminal like this:
 # [example]
 # If you want your bar to have the same background color as your 
@@ -331,7 +331,7 @@ set_from_resource $term_color15    color15
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position bottom
+	position bottom 
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -344,8 +344,8 @@ bar {
 
     colors {
         background $term_background
-        statusline #F9FAF9
-        separator  #454947
+        statusline color0
+        separator color5 
 
 
 #                	   border       backgr.      text
