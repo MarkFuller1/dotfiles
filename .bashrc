@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-
+force_color_prompt=yes
 alias yay="yay --color=always"
 
 [[ $- != *i* ]] && return
@@ -156,5 +156,6 @@ alias earth="sshfs fullerm@earth.ecs.baylor.edu:/home/csi/f/fullerm ~/Baylor"
 alias wind="sshfs fullerm@wind.ecs.baylor.edu:/home/csi/f/fullerm ~/Baylor"
 alias fire="sshfs fullerm@fire.ecs.baylor.edu:/home/csi/f/fullerm ~/Baylor"
 alias bunmount="fusermount3 -u ~/Baylor"
+alias sleep="systemctl suspend"
 
 
