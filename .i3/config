@@ -1,7 +1,6 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-exec --no-startup-id feh --dg-fill ~/Pictures/llama2.jpg 
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -223,6 +222,7 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [class="clion"] floating enable
 
 # switch to workspace with urgent window automatically
 #for_window [urgent=latest] focus
@@ -301,7 +301,7 @@ exec_always --no-startup-id fix_xcursor
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
-# Change the variable name at the place yu want too match the color
+# Change the variable name at the place you want too match the color
 # of your terminal like this:
 # [example]
 # If you want your bar to have the same background color as your 
@@ -333,7 +333,7 @@ set_from_resource $term_color15    color15
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position bottom 
+	position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -351,7 +351,7 @@ bar {
 
 
 #                	   border       backgr.      text
-        focused_workspace  $term_color6 $term_color6 $term_color2 
+        focused_workspace  $term_color6 $term_color6 $term_color0
         active_workspace   $term_color6 $term_color3 $term_color2
         inactive_workspace $term_color4 $term_color3 $term_color7
         binding_mode       $term_color4 $term_color5 $term_color7
@@ -370,7 +370,7 @@ bindsym $mod+m bar mode toggle
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
-  client.background       #2B2C2B
+  client.background       $term_background
 
 #############################
 ### settings for i3-gaps: ###

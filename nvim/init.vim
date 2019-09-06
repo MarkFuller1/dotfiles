@@ -35,10 +35,10 @@ set number
 syntax on
 
 "number of visual spaces per tab"
-set tabstop=4
+set tabstop=2
 
 "number of spaces in tab when editing"
-set softtabstop=4
+set softtabstop=2
 
 "tabs are spaces"
 set expandtab
