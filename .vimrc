@@ -85,6 +85,9 @@ set hlsearch
 nnoremap j gj
 nnoremap k gk
 
+:set rnu
+
+
 
 
 

@@ -148,6 +148,9 @@ let g:mkdp_port = ''
 " ${name} will be replace with the file name
 let g:mkdp_page_title = '「${name}」'
 
+"relative line numbers
+set rnu
+
 " example
 nmap <C-s> <Plug>MarkdownPreview
 nmap <M-s> <Plug>MarkdownPreviewStop
