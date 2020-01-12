@@ -13,6 +13,8 @@ Plug 'tpope/vim-obsession'
 Plug 'vim-airline/vim-airline' 
 Plug 'airblade/vim-gitgutter'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'WolfgangMehner/vim-plugins'
 
 call plug#end()
 
@@ -35,6 +37,7 @@ set number
 syntax on
 
 "number of visual spaces per tab"
+set shiftwidth=2
 set tabstop=2
 
 "number of spaces in tab when editing"
