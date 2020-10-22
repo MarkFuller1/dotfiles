@@ -59,7 +59,8 @@ override-redirect = true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-font-1 = "pango:Hack"
+font-0 = "Font Awesome 5:pixelsize=12;0"
+font-1 = "TerminessTTF Nerd Font:pixelsize=12;0"
 
 [module/bspwm]
 type = internal/bspwm
@@ -120,16 +121,17 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 ; Separator in between workspaces
 ; label-separator = |
 [module/bluetooth]
-label-font = 1
-type = custom/script
-exec = /home/mark/.config/polybar/bluetooth.sh
-interval = 10
+label-font = 2
+type = custom/text
+;exec = /home/mark/.config/polybar/bluetooth.sh
+interval = 1
 click-left = exec /home/mark/.config/polybar/goo1/bluetooth_connect.sh
 click-right = exec /home/mark/.config/polybar/good1/toggle_bluetooth.sh
 format-padding = 1
-format-background = #000000
-format-foreground = #ffffff
+;format-background = #000000
+;format-foreground = #
 label =  
+content =  
 
 [module/mpd]
 type = internal/mpd
