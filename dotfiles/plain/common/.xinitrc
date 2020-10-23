@@ -57,4 +57,5 @@ kitty home/mark/.fehbg &
 
 exec kitty -geometry 80x66+0+0 -name login
 
+picom -b
 

@@ -212,11 +212,17 @@ for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo
 for_window [class="Microsoft Teams - Preview"] floating enable
 
 # Set theme and wallpaper
-exec_always wal -i '/home/mark/Downloads/639431.jpg' -n && feh --bg-scale --no-xinerama '/home/mark/Downloads/wp5603891-desktop-dual-screen-universe-wallpapers.jpg' 
+exec_always wal -i '/home/mark/.config/i3/639431.jpg' -n && feh --bg-scale --no-xinerama '/home/mark/.config/i3/c&h.jpg' 
 
 # set the monitor layout
-exec_always xrandr --output DP-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output DP-3 --off --output DP-4 --mode 2560x1440 --pos 2560x0 --rotate normal --output DP-5 --off --output USB-C-0 --off
-
+exec_always xrandr --output DP-0 --primary --mode 2560x1440 --pos 2557x0 --rotate normal --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output DP-3 --off --output DP-4 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-5 --off --output USB-C-0 --off
 # make the borders round
  border_radius 10
+
+ #start picom
+ exec_always --nostrtup-id picom -b
+
+ exec_always netctl start 'wlp4s0-The Ranch'
+
+ exec_always picom -b
 
