@@ -23,8 +23,7 @@ exec --no-startup-id compton -b --vsync
 # exec setxkbmap -option 'grp:alt_shift_toggle'
 
 # Menu
-bindsym $mod+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -columns 
-
+bindsym $mod+d exec rofi -lines 6 -padding 18 -width 45 -location 0 -font "Hack 12" -show drun -columns 
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -212,7 +211,7 @@ for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo
 for_window [class="Microsoft Teams - Preview"] floating enable
 
 # Set theme and wallpaper
-exec_always wal -i '/home/mark/.config/i3/639431.jpg' -n && feh --bg-scale --no-xinerama '/home/mark/.config/i3/c&h.jpg' 
+exec_always wal -i '/home/mark/.config/i3/c&h.jpg' -n && feh --bg-scale --no-xinerama '/home/mark/.config/i3/c&h.jpg' 
 
 # set the monitor layout
 exec_always xrandr --output DP-0 --primary --mode 2560x1440 --pos 2557x0 --rotate normal --output DP-1 --off --output HDMI-0 --off --output DP-2 --off --output DP-3 --off --output DP-4 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-5 --off --output USB-C-0 --off
@@ -221,8 +220,4 @@ exec_always xrandr --output DP-0 --primary --mode 2560x1440 --pos 2557x0 --rotat
 
  #start picom
  exec_always --nostrtup-id picom -b
-
- exec_always netctl start 'wlp4s0-The Ranch'
-
- exec_always picom -b
 

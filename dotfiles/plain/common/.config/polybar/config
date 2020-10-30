@@ -17,21 +17,30 @@
 ;==========================================================
 
 [colors]
-background = #CD303030
-background-alt = #CD404040
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #e3d0c9
-secondary = #db7f95
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+
+; [colors]
+;background = #CD303030
+;background-alt = #CD404040
+;foreground = #dfdfdf
+;foreground-alt = #555
+;primary = #e3d0c9
+;secondary = #db7f95
 #secondary = #e491a3
-alert = #bd2c40
+;alert = #bd2c40
 
 
 [bar/main]
 monitor = ${env:MONITOR:}
-width = 2500
+width = 2460
 height = 28
-offset-x = 25
+radius = 15
+offset-x = 50
 offset-y = 14
 fixed-center = true
 
@@ -189,7 +198,7 @@ type = internal/network
 interface = wlp4s0
 interval = 3.0
 
-format-connected = ⮷ <label-connected>
+format-connected = <label-connected>
 format-connected-underline = ${colors.primary}
 label-connected = %local_ip%
 
@@ -228,7 +237,7 @@ format-underline = ${colors.primary}
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = ⮟ %percentage%%
+label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = muted
@@ -245,9 +254,9 @@ bar-volume-foreground-6 = ${colors.secondary}
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 1
-bar-volume-fill = ─
+bar-volume-fill = -
 bar-volume-fill-font = 1
-bar-volume-empty = ─
+bar-volume-empty = -
 bar-volume-empty-font = 1
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
