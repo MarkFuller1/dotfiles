@@ -75,12 +75,12 @@ require('lspconfig')['pyright'].setup{
     flags = lsp_flags,
 }
 
-require('lspconfig')['tsserver'].setup{
+require'lspconfig'.anakin_language_server.setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
 
-require'lspconfig'.anakin_language_server.setup{}
+require'lspconfig'.jdtls.setup{}
 
 
 -- start coq :COQnow
