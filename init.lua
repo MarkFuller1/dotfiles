@@ -80,8 +80,9 @@ require'lspconfig'.anakin_language_server.setup{
     flags = lsp_flags,
 }
 
-require'lspconfig'.jdtls.setup{}
-
+require'lspconfig'.jdtls.setup{
+	cmd = { 'jdtls' }
+}
 
 -- start coq :COQnow
 vim.cmd([[
